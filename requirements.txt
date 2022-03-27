@@ -1,0 +1,7 @@
+telethon
+cryptg
+hachoir
+tenacity
+requests
+aiohttp
+aiofiles

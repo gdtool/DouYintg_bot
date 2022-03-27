@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+
+  # bot
+  douyintgbot:
+    image: jwstar/douyintgbot:latest
+    network_mode: host
+    container_name: douyintgbot
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      #正式
+      API_ID: 1221212
+      API_HASH: 122222222222222222222
+      BOT_TOKEN: faffsfaaaaaaaaa
+
+    deploy:
+      resources:
+        limits:
+          cpus: '0.80'
