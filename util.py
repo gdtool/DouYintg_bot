@@ -25,12 +25,13 @@ async def run(url, name):
 
 
 async def downImg(session, url, filename):
-    url=url.replace('-sign', '') #这部很重要,去掉签名验证,防止403
+    url = url.replace('-sign', '')
     async with session.get(url, headers=headers) as r:
         content = await r.content.read()
         async with aiofiles.open(filename, 'wb') as f:
             await f.write(content)
         print("\r", '任务文件 ', filename, ' 下载成功', end="", flush=True)
+
 
 # 下载图片
 async def downImages(urls):

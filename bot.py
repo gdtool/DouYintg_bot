@@ -42,7 +42,7 @@ async def echo_all(event):
 
         msg2 = await event.client.send_message(event.chat_id,
                                                '🤞')
-        info = douyin.getDouYinInfo(urls[0])
+        info = await douyin.getDouYinInfo(urls[0])
 
         if isinstance(info[0], list):
             jpgFiles = await util.downImages(info[0])
