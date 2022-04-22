@@ -28,8 +28,8 @@ mkdir /douyin
 
 ```angular2html
       
-      API_ID: 7747935
-      API_HASH: 7d98fa6e83d0d43541fa97bfb6d58f1e
+      API_ID: 2222222222222
+      API_HASH: 22222
       BOT_TOKEN: 5161622943:AAEQwISVYsatw_5UcC6MIs8GtmrlokdYeyY
 ```
 
